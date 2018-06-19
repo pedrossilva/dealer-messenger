@@ -9,28 +9,11 @@ class Header extends Component {
   render() {
     return (
       <header>
-        {/*<div className="columns">*/}
-          {/*<div className="brand column">*/}
-            {/*Dealer Messenger*/}
-          {/*</div>*/}
-          {/*<nav className="column is-half">*/}
-            {/*<ul>*/}
-              {/*<ul className="columns">*/}
-                {/*<li className="column is-narrow">Campaingns</li>*/}
-                {/*<li className="column is-narrow">Customers</li>*/}
-                {/*<li className="column is-narrow">Reports</li>*/}
-              {/*</ul>*/}
-            {/*</ul>*/}
-
-          {/*</nav>*/}
-          {/*<div className="column"></div>*/}
-        {/*</div>*/}
-
 
         <nav className="navbar">
           <div className="navbar-brand">
-            <a className="navbar-item" href="https://bulma.io">
-              <img src={logo} alt="Bulma: a modern CSS framework based on Flexbox" width="200px"/>
+            <a className="navbar-item" href="javascript:;">
+              <img src={logo} alt="Hyundai" width="200px"/>
               <span className="brand-label">Dealer Messenger</span>
             </a>
             <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
@@ -42,13 +25,13 @@ class Header extends Component {
 
           <div className="navbar-end">
             <div className="navbar-start navbar-custom">
-              <a className="navbar-item" href="https://bulma.io/">
+              <a className="navbar-item" href="javascript:;">
                 Campaingns
               </a>
-              <a className="navbar-item" href="https://bulma.io/">
+              <a className="navbar-item" href="javascript:;">
                 Customers
               </a>
-              <a className="navbar-item" href="https://bulma.io/">
+              <a className="navbar-item" href="javascript:;">
                 Reports
               </a>
             </div>
@@ -74,23 +57,23 @@ class Header extends Component {
                   <a className="navbar-item" href="/documentation/overview/start/">
                     Overview
                   </a>
-                  <a className="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                  <a className="navbar-item" href="javascript:;">
                     Modifiers
                   </a>
-                  <a className="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                  <a className="navbar-item" href="javascript:;">
                     Columns
                   </a>
-                  <a className="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                  <a className="navbar-item" href="javascript:;">
                     Layout
                   </a>
-                  <a className="navbar-item" href="https://bulma.io/documentation/form/general/">
+                  <a className="navbar-item" href="javascript:;">
                     Form
                   </a>
                   <hr className="navbar-divider"/>
-                    <a className="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                    <a className="navbar-item" href="javascript:;">
                       Elements
                     </a>
-                    <a className="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                    <a className="navbar-item is-active" href="javascript:;">
                       Components
                     </a>
                 </div>
@@ -102,6 +85,28 @@ class Header extends Component {
             </div>
           </div>
         </nav>
+
+
+        <nav className="navbar subnav">
+          <a className="navbar-item" href="javascript:;">
+            Sent Campaingns
+          </a>
+          <a className="navbar-item" href="javascript:;">
+            Drafts
+          </a>
+          <a className="navbar-item" href="javascript:;">
+            Templates
+          </a>
+          <div className="navbar-end">
+            <div className="navbar-item">
+              <a className="button is-primary">
+                <span className="circle-icon"><i className="fa fa-plus"></i></span>
+                Create Campaign
+              </a>
+            </div>
+          </div>
+        </nav>
+
 
       </header>
     )

@@ -89,4 +89,39 @@
     }
   }
 
+  &.subnav {
+    background-color: $white;
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.03);
+    a:not(.button), a.navbar-item:hover, .navbar-link:hover {
+      color: $grey-dark;
+    }
+    a.navbar-item.is-active, .navbar-link.is-active {
+      color: $blue;
+    }
+    & > .navbar-item {
+      padding: 0.5rem 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+    }
+    .button {
+      font-weight: bold;
+    }
+  }
+
+}
+
+.circle-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  border: 2px solid $white-03;
+  margin-right: 0.6em;
+  color: $white;
+  i {
+    width: 100%;
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+  }
 }
