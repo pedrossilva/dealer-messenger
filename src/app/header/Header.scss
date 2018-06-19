@@ -1,0 +1,92 @@
+@import "../../styles/var";
+
+.navbar {
+  a, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+    color: $white;
+  }
+  .navbar-link::after {
+    border-color: #FFFFFF;
+  }
+  .navbar-dropdown {
+    a {
+      color: $blue;
+    }
+  }
+
+  .navbar-brand {
+    padding: 10px 0;
+    .navbar-item img {
+      width: 200px;
+      max-height: none;
+    }
+  }
+
+  .navbar-custom {
+    &> .navbar-item {
+      padding: 0.5rem 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+      .navbar-link:hover, .navbar-link.is-active {
+        background-color: transparent;
+        color: $white;
+      }
+      &.has-dropdown:hover > .navbar-link, &.has-dropdown.is-active > .navbar-link {
+        background-color: transparent;
+      }
+      &.nav-icon {
+        font-size: 1.2rem;
+        border-right: 1px solid $black-02;
+        border-left: 1px solid $black-02;
+        border-spacing: -1px;
+      }
+    }
+  }
+
+  .brand-label {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .dropdown-custom {
+
+  }
+
+  .no-pseudo::after, .no-pseudo::before {
+    content: none;
+    display: none;
+  }
+  .navbar-link.no-pseudo {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    max-height: 3rem;
+    border-radius: 1.5rem;
+    border: 2px solid white;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .person-description {
+    display: inline-block;
+    vertical-align: middle;
+    color: $white;
+    strong {
+      font-size: 0.9rem;
+      color: $white;
+    }
+    span {
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+      opacity: 0.7;
+    }
+  }
+
+}
