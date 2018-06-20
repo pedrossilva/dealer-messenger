@@ -6,7 +6,7 @@
   "author": "Pedro Silva <pedrossilva.br@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.dev.js --progress --colors",
+    "start": "webpack-dev-server --config ./webpack.config.dev.js --hot --progress --colors",
     "build": "webpack --config ./webpack.config.prod.js --progress --colors"
   },
   "devDependencies": {

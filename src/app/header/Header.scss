@@ -1,114 +1,76 @@
 @import "../../styles/var";
+@import "~bulma";
 
-.navbar {
-  a, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
-    color: $white;
-  }
-  .navbar-link::after {
-    border-color: #FFFFFF;
-  }
-  .navbar-dropdown {
-    a {
-      color: $blue;
-    }
-  }
+.navbar .navbar-item img {
+  max-height: none;
+}
 
-  .navbar-brand {
-    padding: 10px 0;
-    .navbar-item img {
-      width: 200px;
-      max-height: none;
-    }
-  }
-
-  .navbar-custom {
-    &> .navbar-item {
-      padding: 0.5rem 2rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.05);
-      }
-      .navbar-link:hover, .navbar-link.is-active {
-        background-color: transparent;
-        color: $white;
-      }
-      &.has-dropdown:hover > .navbar-link, &.has-dropdown.is-active > .navbar-link {
-        background-color: transparent;
-      }
-      &.nav-icon {
-        font-size: 1.2rem;
-        border-right: 1px solid $black-02;
-        border-left: 1px solid $black-02;
-        border-spacing: -1px;
-      }
-    }
-  }
-
-  .brand-label {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-
-  .dropdown-custom {
-
-  }
-
-  .no-pseudo::after, .no-pseudo::before {
-    content: none;
-    display: none;
-  }
-  .navbar-link.no-pseudo {
+.navbar-main .navbar-item {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5rem 1.75rem;
+  @include desktop-only {
     padding: 0.5rem 0.75rem;
   }
 
-  .avatar {
-    width: 2.5rem;
-    height: 2.5rem;
-    max-height: 3rem;
-    border-radius: 1.5rem;
-    border: 2px solid white;
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: middle;
-  }
+}
 
-  .person-description {
-    display: inline-block;
-    vertical-align: middle;
+.navbar-brand .navbar-item {
+  img {
+    max-height: none;
+  }
+  span {
+    font-size: 0.9rem;
+  }
+  .brand-label {
+    margin-top: 12px;
+  }
+}
+.navbar-burger {
+  color: transparentize($white, 0.2);
+  &:hover {
     color: $white;
-    strong {
-      font-size: 0.9rem;
-      color: $white;
-    }
-    span {
-      font-size: 0.7rem;
-      letter-spacing: 1px;
-      opacity: 0.7;
-    }
   }
+}
 
-  &.subnav {
-    background-color: $white;
-    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.03);
-    a:not(.button), a.navbar-item:hover, .navbar-link:hover {
-      color: $grey-dark;
-    }
-    a.navbar-item.is-active, .navbar-link.is-active {
-      color: $blue;
-    }
-    & > .navbar-item {
-      padding: 0.5rem 2rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-    }
-    .button {
-      font-weight: bold;
-    }
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  max-height: 3rem;
+  border-radius: 1.5rem;
+  border: 2px solid white;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.person-description {
+  display: inline-block;
+  vertical-align: middle;
+  color: $white;
+  strong {
+    font-size: 0.9rem;
+    color: $white;
   }
+  span {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    opacity: 0.7;
+  }
+}
 
+.divider-left {
+  border-left: 1px solid rgba(0,0,0,0.2);
+}
+
+.navbar.navbar-white {
+  background-color: $white;
+  a, a:hover {
+    color: $grey-dark;
+  }
+  .button.is-primary {
+    color: $white;
+  }
 }
 
 .circle-icon {
@@ -125,3 +87,4 @@
     line-height: 1.3rem;
   }
 }
+

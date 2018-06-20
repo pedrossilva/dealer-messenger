@@ -34,3 +34,7 @@ $family-sans-serif: "Nunito", sans-serif;
 
 //
 $navbar-background-color: $blue;
+$navbar-item-color: transparentize($white, 0.2);
+$navbar-item-hover-color: $white;
+$navbar-item-hover-background-color: transparentize($white, 0.92);
+//$navbar-item-active-background-color:;
