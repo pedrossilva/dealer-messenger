@@ -17,15 +17,6 @@ module.exports = merge(common, {
       {
         test: /\.jsx$/,
         use: 'react-hot-loader'
-      },
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {}
-          }
-        ]
       }
     ]
   }
