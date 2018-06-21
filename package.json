@@ -10,7 +10,8 @@
     "node": "9.4.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.dev.js --hot --progress --colors",
+    "start": "node server.js",
+    "start:dev": "webpack-dev-server --config ./webpack.config.dev.js --hot --progress --colors",
     "build": "webpack --config ./webpack.config.prod.js --progress --colors"
   },
   "devDependencies": {
