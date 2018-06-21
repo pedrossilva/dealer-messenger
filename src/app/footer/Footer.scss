@@ -1,0 +1,21 @@
+@import "../../styles/var";
+
+footer {
+  margin-top: 4rem;
+  margin-bottom: -4rem;
+  .copyright {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
+  .footer-map {
+    font-size: 0.9rem;
+    a, span {
+      margin-right: 1.4rem;
+      color: $grey;
+    }
+  }
+  .footer-logo {
+    filter: invert(.1);
+  }
+}
