@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Header from './header/Header'
 import Campaigns from './campaigns/Campaigns'
-import Feed from './feed/Feed'
+import Feeds from './feed/Feeds'
+import Footer from './footer/Footer'
 
 import './App.scss'
 
@@ -14,9 +15,11 @@ class App extends Component {
         <div className="columns">
           <div className="column page">
             <Campaigns/>
+
+            <Footer/>
           </div>
           <div className="column is-narrow right-side">
-            <Feed/>
+            <Feeds/>
           </div>
         </div>
       </div>

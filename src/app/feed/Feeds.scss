@@ -1,0 +1,79 @@
+@import "../../styles/var";
+
+.feeds {
+  width: 380px;
+  height: 100%;
+  padding: 2rem 1.5rem;
+  background-color: white;
+  border-left: 1px solid #F5F5F5;
+  .side-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .side-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.4rem;
+  }
+  .btn-search {
+    i {
+      font-size: 1.2rem;
+      color: $grey;
+    }
+  }
+  .btns-filter {
+    .button {
+      width: 100%;
+      i.far, i.fas {
+        font-size: 1.2rem;
+      }
+      &.is-light {
+        color: $grey;
+      }
+    }
+  }
+  .link-all-notifications {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  .feed {
+    margin-top: 1.5rem;
+    .username {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: $blue;
+      span {
+        font-weight: normal;
+        color: $grey;
+      }
+    }
+    .feed-datetime {
+      font-size: 0.75rem;
+      color: $grey;
+      a {
+        float: right;
+        font-size: 0.9rem;
+        color: $blue;
+        font-weight: bold;
+        i {
+          color: $grey;
+          vertical-align: middle;
+        }
+      }
+    }
+    .comment {
+      background-color: $bg-grey;
+      padding: 0.6rem;
+      margin: 0.6rem 0;
+      border-radius: 0.2rem;
+      color: $grey-dark;
+      font-size: 0.8rem;
+    }
+  }
+  .columns.clear-v-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+    .column {
+      padding-bottom: 0;
+    }
+  }
+}
