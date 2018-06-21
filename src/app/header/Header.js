@@ -28,13 +28,12 @@ class Header extends Component {
     return (
       <header>
 
-
         <nav className="navbar" role="navigation" aria-label="main navigation">
           <Brand showMenu={showMenu}/>
 
           <div className={menuClass}>
             <div className="navbar-end navbar-main">
-              <a className="navbar-item">Campaigns</a>
+              <a className="navbar-item active">Campaigns</a>
               <a className="navbar-item">Customers</a>
               <a className="navbar-item">Reports</a>
 
@@ -58,7 +57,7 @@ class Header extends Component {
         <nav className="navbar navbar-white" role="navigation" aria-label="main navigation">
           <div className={menuClass}>
             <div className="navbar-start navbar-main">
-              <a className="navbar-item">Sent Campaigns</a>
+              <a className="navbar-item active">Sent Campaigns</a>
               <a className="navbar-item">Drafts</a>
               <a className="navbar-item">Templates</a>
             </div>
@@ -72,7 +71,6 @@ class Header extends Component {
             </div>
           </div>
         </nav>
-
 
       </header>
     )

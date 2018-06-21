@@ -1,17 +1,22 @@
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 @import "var";
+@import "placeholders";
 
 // Import the rest of Bulma
 @import "~bulma";
 
 
 html, body {
-  background-color: #f6f9fc;
+  background-color: $bg-grey;
 }
 
 .button {
   height: 3em;
   padding-right: 1em;
   padding-left: 1em;
+}
+
+.dot {
+  @extend %dot
 }

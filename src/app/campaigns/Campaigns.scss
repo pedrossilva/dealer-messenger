@@ -1,0 +1,47 @@
+@import "../../styles/placeholders";
+
+table {
+  @extend %table;
+  td {
+    font-size: 0.9rem;
+    font-weight: bold;
+    .item-title {
+      font-size: 1rem;
+      color: $blue;
+    }
+    .item-desc {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: normal;
+    }
+  }
+}
+
+.wrap-list {
+  margin-left: -0.8rem;
+  margin-right: -0.8rem;
+}
+
+.list-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  .dropdown.sort-by {
+    float: right;
+  }
+}
+
+.link-show-all {
+  text-align: right;
+}
+
+.circle-val {
+  color: $white;
+  background-color: $blue;
+  border-radius: 1rem;
+  font-size: 0.6rem;
+  padding: 0.2rem;
+  display: inline-block;
+  height: 1.2rem;
+  min-width: 1.2rem;
+}

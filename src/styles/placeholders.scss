@@ -1,0 +1,42 @@
+@import "var";
+
+%table {
+  width: 100%;
+  tr {
+    border: 0.8rem solid $bg-grey;
+    th, td {
+      text-align: center;
+    }
+    th:first-child, td:first-child {
+      text-align: left;
+    }
+  }
+  thead {
+    th {
+      font-size: 0.6rem;
+      font-weight: 100;
+      text-transform: uppercase;
+      color: $grey;
+      padding: 0rem 1rem;
+    }
+  }
+  tbody {
+    tr {
+      outline: 1px solid #F5F5F5;
+      outline-offset: -0.4rem;
+    }
+    td {
+      background-color: $white;
+      padding: 0.7rem 0.8rem;
+      vertical-align: middle;
+    }
+  }
+}
+
+%dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  border: 2px solid $grey;
+  display: inline-block;
+}
